@@ -1,0 +1,18 @@
+00:00 +0: loading test/api_client_test.dart
+00:00 +0: test/api_client_test.dart: refreshes once on 401 and retries the original request once
+00:00 +1: test/api_client_test.dart: concurrent 401s share a single refresh request
+00:00 +2: test/api_client_test.dart: failed refresh clears tokens and signals session expiry
+00:00 +3: test/api_client_test.dart: auth paths never trigger a refresh
+00:00 +4: test/api_client_test.dart: errors never contain tokens or raw server bodies
+00:00 +5: test/api_client_test.dart: network failures become a safe connection message
+00:00 +6: test/api_client_test.dart: requests that never answer time out with a safe message
+00:01 +7: test/api_client_test.dart: requests that never answer time out with a safe message
+00:01 +8: test/api_client_test.dart: requests that never answer time out with a safe message
+00:01 +9: test/api_client_test.dart: requests that never answer time out with a safe message
+00:01 +10: test/api_client_test.dart: requests that never answer time out with a safe message
+00:01 +11: test/api_client_test.dart: requests that never answer time out with a safe message
+00:01 +12: test/api_client_test.dart: requests that never answer time out with a safe message
+00:02 +13: test/api_client_test.dart: requests that never answer time out with a safe message
+00:15 +14: test/api_client_test.dart: malformed JSON becomes a safe message
+00:15 +15: test/api_client_test.dart: keeps the query string when building URLs
+00:15 +16: All tests passed!

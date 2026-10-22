@@ -1,0 +1,17 @@
+Health: {"status":"ok"}
+Setup: both token variables are set (values not shown)
+
+| Test                                   | Expected | Result | Pass |
+|----------------------------------------|----------|--------|------|
+| Refresh with valid token               | 200      | 200    | PASS |
+| New refresh token differs from old     | different | different | PASS |
+| Refresh with old token                 | 401      | 401    | PASS |
+| Refresh with newest token after reuse  | 401      | 401    | PASS |
+| Logout                                 | 204      | 204    | PASS |
+| Refresh after logout                   | 401      | 401    | PASS |
+| Logout-all                             | 204      | 204    | PASS |
+| Refresh after logout-all (session 1)   | 401      | 401    | PASS |
+| Refresh after logout-all (session 2)   | 401      | 401    | PASS |
+| Create task                            | 201      | 201    | PASS |
+| List tasks                             | 200      | 200    | PASS |
+| List tasks without token               | 401      | 401    | PASS |

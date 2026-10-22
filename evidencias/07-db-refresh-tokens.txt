@@ -1,0 +1,21 @@
+-- Filas mas recientes de RefreshToken (sin tokenHash). Mismo familyId = misma familia rotada.
+     id     |  family  | revoked | replaced_by |  expires   
+------------+----------+---------+-------------+------------
+ cmvk4ecvj0 | 73d34ff4 | t       | cmvk4ed520  | 2026-10-29
+ cmvk4ed520 | 73d34ff4 | t       |             | 2026-10-29
+ cmvk4edwy0 | 96f407a4 | t       |             | 2026-10-29
+ cmvk4eek00 | 9112e385 | t       |             | 2026-10-29
+ cmvk4ef4q0 | 2a004143 | t       |             | 2026-10-29
+ cmvk4efv30 | f909683a | f       |             | 2026-10-29
+ cmvk4mk9t0 | dc7ba667 | t       | cmvk4mkf80  | 2026-10-29
+ cmvk4mkf80 | dc7ba667 | t       |             | 2026-10-29
+ cmvk4ngpc0 | 4665916a | t       | cmvk4ngsa0  | 2026-10-29
+ cmvk4ngsa0 | 4665916a | t       |             | 2026-10-29
+(10 rows)
+
+-- Se guarda solo el hash SHA-256 (64 hex), nunca el token:
+ hash_length 
+-------------
+          64
+(1 row)
+
