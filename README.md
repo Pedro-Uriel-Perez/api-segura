@@ -96,6 +96,16 @@ Contrato completo en [backend/docs/openapi.yaml](backend/docs/openapi.yaml).
 | [06-cors-y-headers.txt](evidencias/06-cors-y-headers.txt) | CORS con lista blanca y encabezados de seguridad de Helmet |
 | [07-db-refresh-tokens.txt](evidencias/07-db-refresh-tokens.txt) | Tabla RefreshToken: familias, revocación, `replacedById`; solo se guarda el hash SHA-256 |
 
+### Capturas de la app (Flutter web en Chrome contra la API local)
+
+| | | |
+|---|---|---|
+| ![Login](evidencias/capturas/01-login.png)<br>Login | ![Validación](evidencias/capturas/02-validacion-contrasena-corta.png)<br>Validación en el cliente (mín. 12 caracteres) | ![Registro](evidencias/capturas/03-registro.png)<br>Registro |
+| ![Lista vacía](evidencias/capturas/04-lista-vacia.png)<br>Estado vacío | ![Nueva tarea](evidencias/capturas/05-nueva-tarea.png)<br>Crear tarea | ![Lista](evidencias/capturas/06-lista-de-tareas.png)<br>Lista de tareas |
+| ![Completada](evidencias/capturas/07-tarea-completada.png)<br>Marcar como completada | ![Editar](evidencias/capturas/08-editar-tarea.png)<br>Editar tarea | ![Editada](evidencias/capturas/09-tarea-editada.png)<br>Tarea editada |
+| ![Confirmar](evidencias/capturas/10-confirmar-borrado.png)<br>Confirmación antes de borrar | ![Borrada](evidencias/capturas/11-tarea-borrada.png)<br>Tarea borrada | ![Logout](evidencias/capturas/12-logout.png)<br>Logout regresa al login |
+| ![Otro usuario](evidencias/capturas/13-otro-usuario-no-ve-las-tareas.png)<br>Otro usuario no ve las tareas del primero | ![Credenciales](evidencias/capturas/14-credenciales-invalidas.png)<br>Mensaje genérico con contraseña incorrecta | |
+
 ### Resultados del ejercicio 19a
 
 | Prueba | Esperado | Resultado | ¿Pasa? |
